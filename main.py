@@ -18,7 +18,6 @@ TRAVEL_ID = 6
 RESULT_ID = 7
 PICKUP_POINT_COMPLETE_ID = 8
 
-
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -427,23 +426,26 @@ image_data = '''
 
 
 if __name__ == "__main__":
-    # mapcuathay
-    # mapkhongvatcan
-    # mapkhongduongdi
-    # mapco1vatcan
-    # mapco2vatcan
-    # mapco3vatcan
-    # mapkhongvatcan,co1diemdon
-    # mapkhongvatcan,co2diemdon
-    # mapkhongvatcan,co3diemdon
-    # mapkhongduongdi,co1diemdon
-    # mapkhongduongdi,co2diemdon
-    # mapkhongduongdi,co3diemdon
-    # mapcovatcan,co1diemdon
-    # mapcovatcan,co2diemdon
-    # mapcovatcan,co3diemdon
+    # map files
+    # 0obstacle,1pickup
+    # 0obstacle,2pickups
+    # 0obstacle,3pickups
+    # 0obstacle,pickups
+    # 0obstacle
+    # 1obstacle
+    # 2obstacles
+    # 3obstacles
+    # nopath,1pickup
+    # nopath,2pickups
+    # nopath,3pickups
+    # nopath
+    # obstacles,1pickup
+    # obstacles,2pickups
+    # obstacles,3pickups
+    # obstacles,pickups
+    # sample
 
-    map, size, S, G, pickup_point_list = read_input("mapcuathay.txt")
+    map, size, S, G, pickup_point_list = read_input("maps/sample.txt")
 
     print(S)
     print(G)
